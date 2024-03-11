@@ -1,0 +1,10 @@
+pipeline {
+agent any
+stages{
+        stage("Git Checkout"){
+            steps{
+                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/Janani-tech-bit/demo-temcat.git'
+            }
+        }
+}
+}
