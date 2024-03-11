@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-  IMAGE_REPO_NAME="frontend_angular"
+  IMAGE_REPO_NAME="demo-temcat"
   IMAGE_TAG="v1"
   
   }
