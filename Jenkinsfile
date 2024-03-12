@@ -2,7 +2,7 @@ pipeline {
 agent any
 environment{
 PATH="/home/ubuntu/apache-maven-3.6.3/bin:$PATH"
-        WS = /var/lib/jenkins/workspace/test
+        WS ="/var/lib/jenkins/workspace/test:$WS"
 }
 stages{
         stage("Git Checkout"){
