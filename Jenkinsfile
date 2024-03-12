@@ -12,7 +12,7 @@ stages{
 stage("Build Image"){
 steps
 {
-sh 'mvn clean package'
+sh 'mvn clean install'
 }
 }
 
