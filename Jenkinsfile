@@ -6,7 +6,7 @@ PATH ="/usr/bin/mvn:$PATH"
 stages{
         stage("Git Checkout"){
             steps{
-                //steps to checkout git//"
+                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/Janani-tech-bit/demo-temcat.git'
             }
         }
 stage("Build Image"){
