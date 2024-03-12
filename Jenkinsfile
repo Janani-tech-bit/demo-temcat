@@ -1,7 +1,7 @@
 pipeline {
 agent any
 environment{
-PATH ="/usr/share/maven:$PATH"
+PATH ="/opt/apache-maven-3.6.3:$PATH"
 }
 stages{
         stage("Git Checkout"){
