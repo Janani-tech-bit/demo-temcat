@@ -15,5 +15,13 @@ steps
 sh 'mvn clean package'
 }
 }
+stage("Push Image"){
+steps
+{
+sh 'docker login -u janustar2008303 -p Janukarthik@612'
+sh 'docker image build . -t janustar2008303/test:v1 -f Dockerfile'
+sh 'docker image push janustar2008303/test:v1'
+}
+}
 }
 }
