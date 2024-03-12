@@ -13,7 +13,7 @@ stages{
 stage("Build Image"){
 steps
 {
-        sh 'sudo chmod a+x /home/ubuntu/apache-maven-3.6.3/bin'
+        sh 'sudo -S chmod a+x /home/ubuntu/apache-maven-3.6.3/bin'
         sh 'mvn clean package'
 }
 }
