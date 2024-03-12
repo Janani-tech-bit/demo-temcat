@@ -2,7 +2,7 @@ pipeline {
 agent any
 environment{
 PATH="/home/ubuntu/apache-maven-3.6.3/bin:$PATH"
-        WS ="/var/lib/jenkins/workspace/test:$WS"
+       
 }
 stages{
         stage("Git Checkout"){
@@ -13,7 +13,8 @@ stages{
 stage("Build Image"){
 steps
 {
-sh 'mvn -f $WS/pom.xml clean package'
+        sh 'sudo chmod a+x /home/ubuntu/apache-maven-3.6.3/bin'
+        sh 'mvn clean package'
 }
 }
 
