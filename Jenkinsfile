@@ -1,8 +1,7 @@
 pipeline {
 agent any
 tools{
-PATH="Maven_Home"
-       
+     maven "Maven_Home"
 }
 stages{
         stage("Git Checkout"){
