@@ -1,7 +1,7 @@
 pipeline {
 agent any
-environment{
-PATH="/home/ubuntu/apache-maven-3.6.3:$PATH"
+tools{
+PATH="Maven_Home"
        
 }
 stages{
