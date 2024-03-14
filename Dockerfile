@@ -1,5 +1,8 @@
 # Use a base image that supports Java 17
-FROM adoptopenjdk/openjdk17:alpine
+FROM ubuntu:latest
+
+# Update the package list and install OpenJDK 17
+RUN apt-get update && apt-get install -y openjdk-17-jdk
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
